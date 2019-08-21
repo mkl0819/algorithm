@@ -1,0 +1,57 @@
+package com.ssafy.mo;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+import com.ssafy.library.printMing;
+
+/*
+ * 핀볼게임
+ * -> 블랙홀 : -1
+ * -> 빈공간 : 0
+ * -> 벽 : 1~5
+ * -> 웜홀 : 6~10
+ */
+public class Solution_mo_5650 {
+	static int T, N, map[][];
+
+	static StringTokenizer st;
+
+	public static void main(String[] args) throws Exception {
+		System.setIn(new FileInputStream("res/Solution_mo_5650.txt"));
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+		T = Integer.parseInt(in.readLine().trim());
+		T = 1;
+		for (int test_case = 1; test_case <= T; test_case++) {
+			N = Integer.parseInt(in.readLine().trim());
+			map = new int[N][N];
+			for(int i=0; i<N; i++) {
+				st = new StringTokenizer(in.readLine());
+				for(int j=0; j<N; j++) {
+					switch(map[i][j] = Integer.parseInt(st.nextToken())) {
+					case -1:
+					case 0:
+					case 1:
+					case 2:
+					case 3:
+					case 4:
+					case 5:
+					case 6:
+					case 7:
+					case 8:
+					case 9:
+					case 10:
+						break;
+					}
+				}
+			}
+			printMing.print(map);
+		}
+	}
+
+}

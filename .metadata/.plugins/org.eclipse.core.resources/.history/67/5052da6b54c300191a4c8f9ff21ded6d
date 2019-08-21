@@ -1,0 +1,29 @@
+package com.ssafy;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main_17136_색종이붙이기 {
+	static int T, COUNT, paper[][];
+	static int square[] = { 0, 5, 5, 5, 5, 5 };
+	static StringTokenizer st;
+
+	public static void main(String[] args) throws Exception {
+		System.setIn(new FileInputStream("res/Main_17136.txt"));
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+		paper = new int[10][10];
+
+		for (int i = 0; i < 10; i++) {
+			st = new StringTokenizer(in.readLine());
+			for (int j = 0; j < 10; j++) {
+				paper[i][j] = Integer.parseInt(st.nextToken());
+				if (j != 0) {
+					paper[i][j] += paper[i][j - 1];
+				}
+			}
+		}
+	}
+}

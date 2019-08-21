@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;printMing.java&apos; to &apos;SWEA/src/com.ssafy.library&apos;&#x0D;&#x0A;- Original project: &apos;Ming&apos;&#x0D;&#x0A;- Destination element: &apos;SWEA/src/com.ssafy.library&apos;&#x0D;&#x0A;- Original element: &apos;printMing.java&apos;" description="Copy compilation unit" destination="=SWEA/src&lt;com.ssafy.library" element1="/src&lt;{printMing.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1562673903032" units="1" version="1.0"/>
+</session>

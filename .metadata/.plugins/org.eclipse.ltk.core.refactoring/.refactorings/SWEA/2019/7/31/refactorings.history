@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.ssafy.library&apos; to &apos;BaekJoon/src&apos;&#x0D;&#x0A;- Original project: &apos;SWEA&apos;&#x0D;&#x0A;- Destination element: &apos;BaekJoon/src&apos;&#x0D;&#x0A;- Original element: &apos;SWEA/src/com.ssafy.library&apos;" description="Copy package" destination="=BaekJoon/src" element1="/src&lt;com.ssafy.library" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1564479445490" version="1.0"/>
+</session>
