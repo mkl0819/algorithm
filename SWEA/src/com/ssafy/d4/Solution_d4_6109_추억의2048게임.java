@@ -1,4 +1,4 @@
-package d4;
+package com.ssafy.d4;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
-public class Solution_d4_6109_Ãß¾ïÀÇ2048°ÔÀÓ {
+public class Solution_d4_6109_ì¶”ì–µì˜2048ê²Œì„ {
 	static int T, N, dir, number;
 	static ArrayList<LinkedList<Integer>> mapList;
 	static StringTokenizer st;
@@ -46,7 +46,7 @@ public class Solution_d4_6109_Ãß¾ïÀÇ2048°ÔÀÓ {
 				mapList.add(new LinkedList<>());
 			}
 			
-			// °¡·Î
+			// ï¿½ï¿½ï¿½ï¿½
 			if (dir % 2 == 0) {
 				for (int i = 0; i < N; i++) {
 					st = new StringTokenizer(in.readLine());
