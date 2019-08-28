@@ -1,18 +1,23 @@
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.Arrays;
 
 public class test3 extends Thread{
+	static int num[];
 	public static void main(String[] args)  {
-//	cat c = new animal();
-		cat c1 = new cat();
-		cat c2 = new cat();
+		num = new int[3];
+		combi(0, 0);
 		
-		c1.cry = "nyang";
+	}
+	private static void combi(int count, int start) {
+		if(count==3) {
+			System.out.println(Arrays.toString(num));
+			return;
+		}
 		
-		System.out.println(c2.cry);
-		Queue<Integer> q = new LinkedList<Integer>();
-		
-		
+		for(int i=start; i<3; i++) {
+			num[count] = i;
+			System.out.println(count+" 번째 "+i+" 넣어서 " + Arrays.toString(num));
+			combi(count+1, i);
+		}
 	}
 
 }

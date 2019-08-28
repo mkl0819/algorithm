@@ -31,7 +31,7 @@ public class Main_17136_색종이붙이기 {
 			}
 		}
 
-//		printMing.print(paper);
+		printMing.print(paper);
 
 		area = paper[10][10];
 		if(area==0) {
@@ -85,19 +85,19 @@ public class Main_17136_색종이붙이기 {
 				}
 			}
 		}
-		System.out.println(size + " / "+count);
+//		System.out.println(size + " / "+count);
 		if(size==0) {
-			System.out.println("zero");
+//			System.out.println("zero");
 			return true;
 		}
 		int onearea = size * size, tmpArea;
-		System.out.println("size : " + size);
+//		System.out.println("size : " + size);
 		for (int i = 10; i > size; i--) {
 			for (int j = 10; j > size; j--) {
 				if(visited[i][j]) continue;
 				tmpArea = paper[i][j] - paper[i - size][j] - paper[i][j - size] + paper[i - size][j - size];
 				if (tmpArea == onearea) {
-					System.out.println("가능가능 " + i + " / " + j);
+//					System.out.println("가능가능 " + i + " / " + j);
 					visitCheck(true, i, j, size);
 					match(sq, size, count-1);
 					visitCheck(false, i, j, size);
