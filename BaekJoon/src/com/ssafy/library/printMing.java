@@ -69,4 +69,18 @@ public class printMing {
 		}
 	}
 
+	public static void print(Integer[] array) {
+		for (int i = 0, size = array.length; i < size; i++) {
+			System.out.printf("%3d", array[i]);
+		}
+		System.out.println();		
+	}
+
+	public static void print(int[] array, int count) {
+		for(int i=0; i<=count; i++) {
+			System.out.printf("%3d", array[i]);
+		}
+		System.out.println();
+	}
+
 }
