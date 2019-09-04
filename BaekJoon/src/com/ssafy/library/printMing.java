@@ -58,9 +58,9 @@ public class printMing {
 	}
 
 	public static void print(char[][][] cube) {
-		for(int i=0, sizei=cube.length; i<sizei; i++) {
-			for(int j=0, sizej=cube[0].length; j<sizej; j++	) {
-				for(int k=0, sizek=cube[0][0].length; k<sizek; k++) {
+		for (int i = 0, sizei = cube.length; i < sizei; i++) {
+			for (int j = 0, sizej = cube[0].length; j < sizej; j++) {
+				for (int k = 0, sizek = cube[0][0].length; k < sizek; k++) {
 					System.out.printf("%c ", cube[i][j][k]);
 				}
 				System.out.println();
@@ -73,12 +73,19 @@ public class printMing {
 		for (int i = 0, size = array.length; i < size; i++) {
 			System.out.printf("%3d", array[i]);
 		}
-		System.out.println();		
+		System.out.println();
 	}
 
 	public static void print(int[] array, int count) {
-		for(int i=0; i<=count; i++) {
+		for (int i = 0; i <= count; i++) {
 			System.out.printf("%3d", array[i]);
+		}
+		System.out.println();
+	}
+
+	public static void print(boolean[] check) {
+		for (int i = 0, size = check.length; i < size; i++) {
+			System.out.printf("%3d", check[i] ? 1 : 0);
 		}
 		System.out.println();
 	}
