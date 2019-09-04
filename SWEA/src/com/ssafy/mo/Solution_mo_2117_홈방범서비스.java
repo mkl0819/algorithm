@@ -26,7 +26,7 @@ public class Solution_mo_2117_홈방범서비스 {
 		cost_init();
 
 		T = Integer.parseInt(in.readLine().trim());
-//		T = 1;
+		T = 1;
 		for (int test_case = 1; test_case <= T; test_case++) {
 			st = new StringTokenizer(in.readLine());
 			N = Integer.parseInt(st.nextToken());
@@ -47,9 +47,11 @@ public class Solution_mo_2117_홈방범서비스 {
 			for (int i = 0, maxCost = homecnt * M; i < 41; i++) {
 				if (maxCost <= cost[i]) {
 					K = i - 1;
+//					System.out.println(maxCost + " / "+ cost[K] + " "+K);
 					break;
 				}
 			}
+			
 
 			MAX = -1;
 			run();
@@ -67,6 +69,7 @@ public class Solution_mo_2117_홈방범서비스 {
 			}
 			K--;
 		}
+//		System.out.println(K+"로 끝");
 	}
 
 //	private static void move(int r, int c, int cnt, int d) {
@@ -108,7 +111,7 @@ public class Solution_mo_2117_홈방범서비스 {
 				}
 			}
 		}
-//		printMing.print(visited);
+		printMing.print(visited);
 //		System.out.println(cnt + " 채 / " + (cnt * M) + "원");
 		return cost[K] <= cnt * M ? cnt : -1;
 	}

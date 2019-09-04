@@ -1,6 +1,11 @@
 package com.ssafy.library;
 
 public class printMing {
+	public static void print(int[] array, int size) {
+		for(int i=0; i<size; i++) {
+			System.out.printf("%3d", array[i]);
+		}System.out.println();
+	}
 	public static void print(int[][] matrix, int size) {
 		for (int i = 0; i < size; i++) {
 			for (int j = 0; j < size; j++) {
@@ -56,5 +61,6 @@ public class printMing {
 	public static void print(String name, Object data) {
 		System.out.println(name + " : " + data);
 	}
+	
 
 }
