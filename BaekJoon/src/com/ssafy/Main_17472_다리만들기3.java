@@ -170,13 +170,13 @@ public class Main_17472_다리만들기3 {
 	}
 }
 
-class Bridge2 implements Comparable<Bridge> {
+class Bridge implements Comparable<Bridge> {
 	int x, y, cost;
 
-	public Bridge2() {
+	public Bridge() {
 	}
 
-	public Bridge2(int x, int y, int cost) {
+	public Bridge(int x, int y, int cost) {
 		super();
 		this.x = x;
 		this.y = y;
