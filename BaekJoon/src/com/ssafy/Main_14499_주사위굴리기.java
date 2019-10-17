@@ -2,6 +2,7 @@ package com.ssafy;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main_14499_주사위굴리기 {
@@ -49,9 +50,10 @@ public class Main_14499_주사위굴리기 {
 				map[dr][dc] = dice[6];
 			} else {
 				dice[6] = map[dr][dc];
+				map[dr][dc] = 0;
 			}
-			System.out.println(dice[1]);
-
+//			System.out.println(dice[1]);
+			System.out.println(Arrays.toString(dice));
 			X = dr;
 			Y = dc;
 		}
